@@ -31,7 +31,7 @@ def main():
                 all_links.append(line.strip())
             line = reader.readline()
     webdriver = Chrome()
-    for url in all_links[:10]:
+    for url in all_links:
         try:
             filename = re.search(r"(boohoo\/.+\?)", url).group()
             filename = filename[7:-1]
